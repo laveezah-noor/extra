@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+    background-size: cover; */
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+
+/* #mySidenav div a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+  }
+  
+  #mySidenav div a i{
+      margin-left:-5px;
+      margin-right:15px;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+  
+  #text {
+    top: 200px;
+    background-color: #4CAF50;
+  }
+  
+  #blog {
+    top: 260px;
+    background-color: #2196F3;
+  }
+  
+  #cart {
+    top: 80px;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 140px;
+    background-color: #555
+  } */
+.social {
+	position: fixed;
+    top: 30%
+}
+.social ul {
+	list-style: none;
+    padding: 0;
+    transform: translateX(-270px);
+}
+.social ul li {
+	display: block;
+    margin: 5px;
+    background-color: rgba(0,0,0,0.5);
+    width: 300px;
+    text-align: right;
+    padding:10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+.social ul li:hover {
+	transform: translateX(110px)
+}
+.social ul li.twitter:hover {
+	background-color: #55acee; 
+}
+.social ul li a {
+	color: #fff;
+    text-decoration: none;
+    }
+.social ul li i{
+	text-align: center;
+    margin-left: 14px;
+    color:#000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg)
+}

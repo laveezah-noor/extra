@@ -1,0 +1,206 @@
+body {
+  font-family: "Core Rhino 45 Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.subscribe-section.parralax {
+  padding: 0;
+  position: relative;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5e3bf;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+}
+.subscribe-section-content {
+  width: 100%;
+  padding: 160px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.subscribe-section-inner {
+  width: 50%;
+  padding: 0 50px;
+}
+.subscribe-section-inner .section-title, .subscribe-section-inner p {
+  margin-bottom: 30px;
+}
+.text-dark {
+  color: #414042!important;
+}
+.section-title {
+  font-size: 42px;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    /* width: 300px; */
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #F2F2F2;
+    color: orange;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: purple;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.center{
+  margin: 40px 0 40px 0;
+}
+/* Card Slider */
+/* 
+.card{border: none}
+
+
+@media (min-width: 768px) { */
+	  /* show 4 items */
+	  /* .carousel-inner .active,
+	  .carousel-inner .active + .carousel-item,
+	  .carousel-inner .active + .carousel-item + .carousel-item,
+	.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+		    display: block;
+			  text-align: center;
+	}
+	
+	}
+
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+ .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+	      transition: none;
+}
+
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+	    position: relative;
+	    transform: translate3d(0, 0, 0);
+}
+
+/* left or forward direction */
+/* .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+	      position: relative;
+	      transform: translate3d(-100%, 0, 0);
+	      visibility: visible;
+
+} */
+
+/* farthest right hidden item must be absolue position for animations */
+/* 
+.carousel-inner .carousel-item-prev.carousel-item-right {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+	    display: block;
+	    visibility: visible;
+
+} */
+
+/* right or prev direction */
+
+/* .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+	      position: relative;
+	      transform: translate3d(100%, 0, 0);
+	      visibility: visible;
+	      display: block;
+	      
+} */
+
+.footer{
+  background-color: orange;
+}
+.footer ul.features {
+  margin-top: -5px;
+}
+footer.page-footer {
+  padding: 0;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+.footer-middle {
+  padding: 20px 0 0;
+  font-size: 13px;
+  font-family: 'Poppins';
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+.footer-middle, .footer-middle p {
+  line-height: 24px;
+}
+.footer-middle, .footer-middle p {
+  color: #e5e6e7;
+}
+.footer-middle {
+  background-color: #a38147;
+}
+li {
+  list-style: none;
+}
+.footer-middle, .footer-middle a, .footer-middle p {
+  color: #fff!important;
+}
+.footer-middle a, .footer-middle a:hover, .footer-middle a:focus {
+  color: #fff;
+}
+a:visited, .alink:visited {
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

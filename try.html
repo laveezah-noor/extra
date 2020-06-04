@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Hover Effects</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+            <div class="header-content">
+            <div class="logo-box">
+                <strong class="logo">                    <img src="https://www.dawnfrozenfoods.com/pub/media/logo/stores/1/logo.png" alt="" width="111" height="50">
+                </strong>
+            </div>
+            <div class="panel-header">
+                <div class="topbar-panel">
+                    <div class="phone-number">
+                        <span>
+                            <i class="porto-icon-phone"></i> 0314 795 6711
+                        </span>
+                    </div>
+                    <divicart" class="minicart-wrapper">
+                        <a class="action showcart" href="#">
+                            <span class="text">Cart</span>
+                            <span class="counter qty empty">
+                                <span class="counter-number">
+                                <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                                <!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko -->
+                                </span>
+                                <span class="counter-label">
+                                    <!-- ko i18n: 'items' --><span>items</span><!-- /ko -->
+                                </span>
+                            </span>
+                        </a>
+                                
+            
+                        
+                    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;"><div class="block block-minicart empty ui-dialog-content ui-widget-content"style="display: block;">
+                                <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                                    <!-- ko template: getTemplate() -->
+                    <div class="block-title">
+                        <strong>
+                            <span class="text"><!-- ko i18n: 'My Cart' --><span>My Cart</span><!-- /ko --></span>
+                            <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
+                                           attr: { title: $t('Items in Cart') }" title="Items in Cart">
+                                <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
+                            </span>
+                        </strong>
+                    </div>
+                    
+                    <div class="block-content">
+                        <button type="button" id="btn-minicart-close" class="action close" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
+                            <span><!-- ko i18n: 'Close' --><span>Close</span><!-- /ko --></span>
+                        </button>
+                    
+                        <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                    
+                        <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                    
+                        <!-- ko ifnot: getCartParam('summary_count') -->
+                            <strong class="subtitle empty" data-bind="visible: closeSidebar()">
+                                <!-- ko i18n: 'You have no items in your shopping cart.' --><span>You have no items in your shopping cart.</span><!-- /ko -->
+                            </strong>
+                            <!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
+                        <!-- /ko -->
+                    
+                        <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                    
+                        <div id="minicart-widgets" class="minicart-widgets">
+                            <!-- ko foreach: getRegion('promotion') -->
+                                <!-- ko template: getTemplate() -->
+                    <!-- ko foreach: {data: elems, as: 'element'} --><!-- /ko -->
+                    <!-- /ko -->
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                    <!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
+                    <!-- /ko -->
+                                </div>
+                            </div></div>
+                        </div>
+                        <div class="top-links-area">
+                            <div><a href="https://www.dawnfrozenfoods.com/lahore//customer/account"><i class="fas fa-user-circle"></i>Login/</a></div>
+                            <div><a href="https://www.dawnfrozenfoods.com/lahore//customer/account/create"><i class="fas fa-user-circle"></i>Register</a></div>
+                        </div>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="navbar" class="main-header-panel collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+        
+                        <li class="ui-menu-item level0">
+                            <a href="https://www.dawnfrozenfoods.com/lahore/" class="level-top"><span>Home</span></a>
+                        </li>
+                        <li class="ui-menu-item level0">
+                            <a href="https://www.dawnfrozenfoods.com/lahore/about-us" class="level-top"><span>About</span></a>
+                        </li>
+                    <li class="ui-menu-item level0 fullwidth "><a href="https://www.dawnfrozenfoods.com/lahore/all-products.html" class="level-top" title="Products"><span>Products</span></a></li>
+                        <!----<li class="ui-menu-item level0">
+                            <a href="#" class="level-top"><span>Recipes</span></a>
+                        </li>
+                        <li class="ui-menu-item level0">
+                            <a href="#" class="level-top"><span>Media</span></a>
+                        </li>--->
+                        <li class="ui-menu-item level0">
+                            <a href="https://www.dawnfrozenfoods.com/lahore/contact" class="level-top"><span>Contact Us</span></a>
+                        </li>
+                        <li class="ui-menu-item level0 mobile-menu">
+                            <a href="https://www.dawnfrozenfoods.com/lahore/customer/account" class="level-top"><span>Login</span></a>
+                        </li>
+                        <li class="ui-menu-item level0 mobile-menu">
+                            <a href="https://www.dawnfrozenfoods.com/lahore/customer/account/create" class="level-top"><span>Register</span></a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="image">
+            <h1 class="heading">Main Heading</h1>
+            <p><button class="btn btn-large">Big Button</button></p>
+         </div>
+        <!-- Products -->
+        <div class="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                                    <h3>Product 1</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div class="card-text">
+                                        <span class="date">In Stock</span>
+                                        <h2>Product Details</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                                      </div>
+                                      <div class="card-stats">
+                                        <div class="btn">
+                                            <a href="#" class="btn"><div class="type">Add to Cart</div></a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                                    <h3>Code</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                                        <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                                    <h3>Launch</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                                        <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <section class="footer">
+        <div class="mbr-overlay" style="background-color: rgb(70, 80, 82); opacity: 0.7;"></div>
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="https://mobirise.com/">
+                            <img src="assets/images/logo2.png" alt="Mobirise" media-simple="true">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">
+                        1234 Street Name
+                        <br>City, AA 99999
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: support@mobirise.com
+                        <br>Phone: +1 (0) 000 0000 001
+                        <br>Fax: +1 (0) 000 0000 002
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-white" href="https://mobirise.com/">Website builder</a>
+                        <br><a class="text-white" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
+                        <br><a class="text-white" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2018 Free footer templates - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com/mobirise" target="_blank">
+                                    <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                    <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                    <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://instagram.com/mobirise" target="_blank">
+                                    <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                    <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.behance.net/Mobirise" target="_blank">
+                                    <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </footer>
+    <footer>
+        <div class="container">
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate nobis ullam quisquam. Ut voluptas quas unde architecto illum numquam.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+    </script>
+</body>
+</html>
